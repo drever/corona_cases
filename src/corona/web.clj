@@ -1,6 +1,7 @@
 (printf "Current-ns [%s] loading %s ...\n" *ns* 'corona.web)
 
 (ns corona.web
+  (:gen-class)
   (:require
    [clj-time-ext.core :as cte]
    [clj-time.core :as ctc]

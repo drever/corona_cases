@@ -1,7 +1,6 @@
 (printf "Current-ns [%s] loading %s ...\n" *ns* 'corona.telegram)
 
 (ns corona.telegram
-  (:gen-class)
   (:require
    [clojure.core.async :as async]
    [corona.common :as com]

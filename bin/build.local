@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+COMMIT=$(git rev-parse --short master)
+# echo "COMMIT="$COMMIT
+echo "COMMIT="$COMMIT >> .heroku-local.env
+
+clojure -X:uberjar
